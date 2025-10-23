@@ -1,0 +1,152 @@
+/* === Page setup === */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* === Main form container === */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* centers form vertically */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* === Inner form box === */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    /* nice width for laptops */
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* === Headings or title label === */
+.form-box h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 25px;
+}
+
+/* === Labels === */
+label {
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* === Input fields === */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+/* === Input focus === */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* === Placeholder color === */
+input::placeholder {
+    color: #aaa;
+}
+
+/* === Optional submit button === */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* === RESPONSIVENESS === */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .form-box {
+        max-width: 600px;
+        padding: 30px 40px;
+    }
+
+    input[type="text"] {
+        font-size: 15px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+    .form-box {
+        max-width: 90%;
+        padding: 25px 30px;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .form-box {
+        width: 95%;
+        padding: 20px;
+        box-shadow: none;
+        /* simpler on mobile */
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"] {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
