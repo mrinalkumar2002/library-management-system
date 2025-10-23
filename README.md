@@ -1,16 +1,16 @@
-# library-management-system
-Initial commit: setup React project
+# React + Vite
 
-Add Navbar component with routing links
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Create Home page component
+Currently, two official plugins are available:
 
-Create BrowseBooks component and display book list
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Add BookDetails page with dynamic routing
+## React Compiler
 
-Create AddBook form component
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Integrate Redux for books state management
+## Expanding the ESLint configuration
 
-Implement search functionality in BrowseBooks
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
